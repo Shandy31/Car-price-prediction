@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Find the brand of car by uploading the image​">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/home.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename = 'js/jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename = 'js/nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-palette-5-dark-2 u-header" id="sec-0e52"><div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center-sm u-align-center-xs u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-1">
+          <span class="u-text-palette-1-light-2">Car Price&nbsp;</span>
+          <span class="u-text-palette-1-light-3">Predicition</span>
+        </h2>
+      </div></header>
+    <section class="skrollable u-clearfix u-lightbox u-palette-1-dark-2 u-section-1" id="sec-6a92">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-form u-form-1">
+          <form action="{{url_for('predict')}}" method="POST">
+            <input type="hidden" id="siteId" name="siteId" value="1499118029">
+            <input type="hidden" id="pageId" name="pageId" value="782129148">
+            <div class="u-form-group u-form-name">
+              <select id="select-ad0c" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <option selected disabled> Select the car name</option>
+              <option value="alfa-romero">alfa-romero</option>
+              <option value="audi">audi</option>
+              <option value="bmw">bmw</option>
+              <option value="chevrolet">chevrolet</option>
+              <option value="dodge">dodge</option>
+              <option value="honda">honda</option>
+              <option value="isuzu">isuzu</option>
+              <option value="jaguar">jaguar</option>
+              <option value="mazda">mazda</option>
+              <option value="buick">buick</option>
+              <option value="mercury">mercury</option>
+              <option value="mitsubishi">mitsubishi</option>
+              <option value="nissan">nissan</option>
+              <option value="peugeot">peugeot</option>
+              <option value="plymouth">plymouth</option>
+              <option value="porsche">porsche</option>
+              <option value="renault">renault</option>
+              <option value="saab">saab</option>
+              <option value="subaru">subaru</option>
+              <option value="toyota">toyota</option>
+              <option value="volkswagen">volkswagen</option>
+              <option value="volvo">volvo</option>
+            </select>
+            </div>
+            <div class="u-form-email u-form-group">
+              <select id="select-ad0c" name="fuel" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <option selected disabled> Select the Fuel type</option>
+              <option value="gas">gas</option>
+              <option value="diesel">diesel</option>
+            </select>
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <select id="select-ad0c" name="aspiration" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <option selected disabled> Select the aspiration type</option>
+              <option value="std">std</option>
+              <option value="turbo">turbo</option>
+            </select>
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <select id="select-ad0c" name="door" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <option selected disabled> Select the door number</option>
+              <option value="four">four</option>
+              <option value="two">two</option>
+            </select>
+            </div>
+            <div class="u-form-group u-form-group-5">
+              <label for="text-308b" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Enter the stroke value" id="text-308b" name="stroke" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-group-6">
+              <label for="text-bf67" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Enter the horsepower value" id="text-bf67" name="horsepower" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-b0e7" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Enter the peakrpm value" id="text-b0e7" name="peakrpm" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-group-8">
+              <select id="select-ad0c" name="enginetype" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
+              <option selected disabled> Select the Engine type</option>
+              <option value="dohc">dohc</option>
+              <option value="ohcv">ohcv</option>
+              <option value="ohc">ohc</option>
+              <option value="l">l</option>
+              <option value="rotor">rotor</option>
+              <option value="ohcf">ohcf</option>
+              <option value="dohcv">dohcv</option>
+            </select>
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+          <h3>{{a}}</h3>
+        </div>
+        <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{url_for('static', filename = 'images/cars1.jpg')}}" alt="" data-image-width="2655" data-image-height="3319">
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-4901"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Made by Shanthosh kumaar<br>@Copyright2021
+        </p>
+      </div></footer>
+   
+  </body>
+</html>
