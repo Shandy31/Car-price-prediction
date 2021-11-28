@@ -33,80 +33,40 @@
     <section class="skrollable u-clearfix u-lightbox u-palette-1-dark-2 u-section-1" id="sec-6a92">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
-          <form action="{{url_for('predict')}}" method="POST">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
             <input type="hidden" id="siteId" name="siteId" value="1499118029">
             <input type="hidden" id="pageId" name="pageId" value="782129148">
             <div class="u-form-group u-form-name">
-              <select id="select-ad0c" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
-              <option selected disabled> Select the car name</option>
-              <option value="alfa-romero">alfa-romero</option>
-              <option value="audi">audi</option>
-              <option value="bmw">bmw</option>
-              <option value="chevrolet">chevrolet</option>
-              <option value="dodge">dodge</option>
-              <option value="honda">honda</option>
-              <option value="isuzu">isuzu</option>
-              <option value="jaguar">jaguar</option>
-              <option value="mazda">mazda</option>
-              <option value="buick">buick</option>
-              <option value="mercury">mercury</option>
-              <option value="mitsubishi">mitsubishi</option>
-              <option value="nissan">nissan</option>
-              <option value="peugeot">peugeot</option>
-              <option value="plymouth">plymouth</option>
-              <option value="porsche">porsche</option>
-              <option value="renault">renault</option>
-              <option value="saab">saab</option>
-              <option value="subaru">subaru</option>
-              <option value="toyota">toyota</option>
-              <option value="volkswagen">volkswagen</option>
-              <option value="volvo">volvo</option>
-            </select>
+              <label for="name-11af" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Enter your Name" id="name-11af" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-email u-form-group">
-              <select id="select-ad0c" name="fuel" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
-              <option selected disabled> Select the Fuel type</option>
-              <option value="gas">gas</option>
-              <option value="diesel">diesel</option>
-            </select>
+              <label for="email-11af" class="u-form-control-hidden u-label"></label>
+              <input type="email" placeholder="Enter a valid email address" id="email-11af" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-group u-form-group-3">
-              <select id="select-ad0c" name="aspiration" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
-              <option selected disabled> Select the aspiration type</option>
-              <option value="std">std</option>
-              <option value="turbo">turbo</option>
-            </select>
+              <label for="text-a335" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="" id="text-a335" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-form-group u-form-group-4">
-              <select id="select-ad0c" name="door" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
-              <option selected disabled> Select the door number</option>
-              <option value="four">four</option>
-              <option value="two">two</option>
-            </select>
+              <label for="text-40b8" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="" id="text-40b8" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-form-group u-form-group-5">
               <label for="text-308b" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Enter the stroke value" id="text-308b" name="stroke" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+              <input type="text" placeholder="" id="text-308b" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-form-group u-form-group-6">
               <label for="text-bf67" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Enter the horsepower value" id="text-bf67" name="horsepower" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+              <input type="text" placeholder="" id="text-bf67" name="text-3" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-form-group u-form-group-7">
               <label for="text-b0e7" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Enter the peakrpm value" id="text-b0e7" name="peakrpm" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+              <input type="text" placeholder="" id="text-b0e7" name="text-4" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-form-group u-form-group-8">
-              <select id="select-ad0c" name="enginetype" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
-              <option selected disabled> Select the Engine type</option>
-              <option value="dohc">dohc</option>
-              <option value="ohcv">ohcv</option>
-              <option value="ohc">ohc</option>
-              <option value="l">l</option>
-              <option value="rotor">rotor</option>
-              <option value="ohcf">ohcf</option>
-              <option value="dohcv">dohcv</option>
-            </select>
+              <label for="text-a6ba" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="" id="text-a6ba" name="text-5" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
             <div class="u-align-left u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
@@ -116,11 +76,9 @@
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
-         
         </div>
         <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{url_for('static', filename = 'images/cars1.jpg')}}" alt="" data-image-width="2655" data-image-height="3319">
       </div>
-	<h3>{{a}}</h3>
     </section>
     
     
@@ -128,6 +86,6 @@
         <p class="u-small-text u-text u-text-variant u-text-1">Made by Shanthosh kumaar<br>@Copyright2021
         </p>
       </div></footer>
-   
+    
   </body>
 </html>
