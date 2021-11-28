@@ -39,7 +39,7 @@ def predict():
 		array = [[name,fuelType,aspiration,doors,stroke,horsepower,peakrpm,enginetype]]
 		array = [np.array(array[0],dtype = 'float64')]
 		price = model.predict(array)
-		result = '                        The price of the car is: ' + '$ ' +str(int(price[0]))
+		result = 'The price of the car is: ' + '$ ' +str(int(price[0]))
 		return render_template("Home.html", a = result)
 
 		
